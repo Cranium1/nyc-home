@@ -1,5 +1,6 @@
 $(function(){
 	$.stellar({
-	positionProperty: 'transform'
-});
+		positionProperty: 'transform',
+  		verticalOffset: -300
+	});
 })
