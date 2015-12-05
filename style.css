@@ -1,0 +1,43 @@
+body > div {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	object-fit: cover;
+	top: 50%;
+}
+
+div:nth-child(3) {
+	z-index: 3;
+	background-color: red;
+}
+
+div:nth-child(2) {
+	left: 50px;
+	z-index: 2;
+	background-color: blue;
+}
+
+div:nth-child(1) {
+	left: 100px;
+	z-index: 1;
+	background-color: green;
+}
+
+body {
+	height: 10000px;
+	background-image: -webkit-linear-gradient(top, #000000, #051729);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

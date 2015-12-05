@@ -1,0 +1,5 @@
+$(function(){
+	$.stellar({
+	positionProperty: 'transform'
+});
+})
