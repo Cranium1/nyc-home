@@ -6,8 +6,13 @@
 }
 
 .red {
+	width: 100px;
+	height: 100%;
 	z-index: 3;
-	background-color: red;
+}
+
+.innerdiv {
+	z-index: 999;
 }
 
 .blue {
@@ -23,7 +28,6 @@
 }
 
 .parent {
-	background-image: -webkit-linear-gradient(top, #000000, #051729);
 	height: 10000px;
 	width: 100%;
 }
