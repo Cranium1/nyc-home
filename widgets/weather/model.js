@@ -4,7 +4,6 @@ WeatherModel = Backbone.Model.extend({
 
 		model.fetch();
 		setInterval(function(){
-			// debugger;
 			model.fetch();
 		},60000);
 	},
@@ -22,7 +21,8 @@ WeatherModel = Backbone.Model.extend({
 	
 	parse: function(response) {
 		if (response) {
-			return {temp: response.query.results.channel.item.condition.temp};
+			return {temp: response.query.results.channel.item.condition.temp,
+					condition: response.query.results.channel.item.condition.text};
 		}
 	}
 });

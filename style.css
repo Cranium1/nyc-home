@@ -15,7 +15,7 @@ body {
 }
 
 .citycontainer {
-    width: 100%;
+    width: 120%;
     height: 100%;
     overflow: hidden;
     position: fixed;

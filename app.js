@@ -13,5 +13,9 @@ $(function(){
 	weather = new WeatherModel;
 	weatherView = new WeatherView({model: weather});
 
-	$('#datacontainer').html(weatherView.el);
+	time = new TimeModel;
+	timeView = new TimeView({model: time});
+
+	$('#datacontainer').append(weatherView.el);
+	$('#datacontainer').append(timeView.el);
 });
