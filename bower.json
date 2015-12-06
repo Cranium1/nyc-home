@@ -1,0 +1,22 @@
+{
+  "name": "nyc-home",
+  "authors": [
+    "Cranium1 <carson@ccrane.me>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.stellar": "~0.6.2"
+  }
+}
