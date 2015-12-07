@@ -8,14 +8,19 @@ body {
 }
 
 #datacontainer {
+    text-align: center;
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 9999;
 }
+#datacontainer, h1 {
+    color: white;
+    font-family: 'Helvetica Neue';
+}
 
 .citycontainer {
-    width: 120%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     position: fixed;
@@ -41,9 +46,9 @@ img {
 	height: 999999px;
 }
 
-.sixth {
+/*.sixth {
 	top: -50px;
-}
+}*/
 
 .thisshit {
     text-align: center;
