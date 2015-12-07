@@ -14,9 +14,10 @@ body {
     position: fixed;
     z-index: 9999;
 }
-#datacontainer, h1 {
+#datacontainer {
     color: white;
-    font-family: 'Helvetica Neue';
+    font-family: 'Roboto';
+    font-weight: 100;
 }
 
 .citycontainer {
