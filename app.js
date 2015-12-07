@@ -30,6 +30,6 @@ $(function(){
 	time = new TimeModel;
 	timeView = new TimeView({model: time});
 
-	$('#datacontainer').append(weatherView.el);
-	$('#datacontainer').append(timeView.el);
+	$('#weatherwidge').append(weatherView.el);
+	$('#timewidge').append(timeView.el);
 });

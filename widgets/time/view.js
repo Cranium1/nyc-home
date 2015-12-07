@@ -1,4 +1,6 @@
 TimeView = Backbone.View.extend({
+	tagName: "h1",
+	className: "timewidge",
   initialize : function() {
     this.render();
     this.model.on('change', this.render, this);
