@@ -46,6 +46,13 @@ img {
 	height: 999999px;
 }
 
+#freedom {
+
+}
+
+#skyline {
+    z-index: 0;
+}
 /*.sixth {
 	top: -50px;
 }*/
