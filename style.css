@@ -12,6 +12,9 @@ body {
     height: 100%;
     position: fixed;
     z-index: 9999;
+    color: white;
+    font-family: 'Helvetica Neue';
+    font-size: x-large;
 }
 
 .citycontainer {
