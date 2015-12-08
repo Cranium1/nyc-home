@@ -1,4 +1,5 @@
 WeatherView = Backbone.View.extend({
+  className: "widget",
   initialize : function() {
     this.render();
     this.model.on('sync', this.render, this);

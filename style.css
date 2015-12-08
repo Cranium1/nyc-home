@@ -47,13 +47,6 @@ img {
 	height: 999999px;
 }
 
-/*.sixth {
-	top: -50px;
-}*/
-
-.thisshit {
-    text-align: center;
-    font-size: 3rem;
-    position: fixed;
-    z-index: 999;
+.widget > h1, .widget > h5 {
+    margin: 0 !important;
 }

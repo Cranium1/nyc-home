@@ -1,4 +1,5 @@
 TimeView = Backbone.View.extend({
+	className: "widget",
   initialize : function() {
     this.render();
     this.model.on('change', this.render, this);
