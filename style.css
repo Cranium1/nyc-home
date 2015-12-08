@@ -19,6 +19,31 @@ body {
     font-family: 'Roboto';
     font-weight: 100;
 }
+.datarow {
+    margin-top: .5%;
+}
+.searchrow {
+    margin: 15%;
+    margin-top: 0;
+}
+
+/* default color of search field */
+input[type=text],input[type=search] {
+    border-bottom: 1px solid white;
+}
+.input-field label {
+    color: white;
+}
+
+/* change focus of search field */
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 2px solid white;
+    box-shadow: 0 1px 0 0 white; 
+}
+input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {    
+    color: transparent;
+    text-align: center;
+}
 
 .citycontainer {
     width: 100%;
