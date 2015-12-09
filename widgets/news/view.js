@@ -1,13 +1,12 @@
-WeatherView = Backbone.View.extend({
+NewsView = Backbone.View.extend({
   className: "widget",
   initialize : function() {
-    this.render();
-    this.model.on('sync', this.render, this);
+    this.collection.on('sync', this.render, this);
   },
   render : function() {
-    // this.$el.html(this.model.get("temp")+"&deg; "+this.model.get("condition"));
-    
-    var template = _.template($('#weatherTemplate').html())({temp: this.model.get("temp"), condition: this.model.get("condition")})
+    var template = _.template($('#newsTemplate').html())({
+      collection: this.collection.toJSON()
+    });
     
     this.$el.html(template);
     

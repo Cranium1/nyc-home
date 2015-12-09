@@ -1,17 +1,5 @@
 app = {};
 
-var abc;
-var weatherView;
-
-// $(document).ready(function(){
-//     window.scrollTo(0, 0);
-// });
-// on reload, to top of page, window load, not doc ready
-// window.onload=function(){
-//     setTimeout(function(){
-//         scrollTo(0,-1);
-//     },0);
-// }
 $(window).load(function() {
 	$(this).scrollTop(0);
   	$("html, body").animate({ scrollTop: $(document).height() - window.innerHeight }, 5000);
@@ -27,9 +15,13 @@ $(function(){
 	weather = new WeatherModel;
 	weatherView = new WeatherView({model: weather});
 
+	news = new NewsModel;
+	newsView = new NewsView({collection: news});
+
 	time = new TimeModel;
 	timeView = new TimeView({model: time});
 
 	$('#weatherWidget').append(weatherView.el);
+	$('.searchrow').append(newsView.el);
 	$('#timeWidget').append(timeView.el);
 });

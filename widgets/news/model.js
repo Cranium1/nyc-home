@@ -1,28 +1,25 @@
-WeatherModel = Backbone.Model.extend({
-	initialize: function() {
-		var model = this;
+var Article = Backbone.Model.extend();
 
-		model.fetch();
+var NewsModel = Backbone.Collection.extend({
+
+	initialize: function() {
+		var collection = this;
+
+		collection.fetch();
 		setInterval(function(){
-			model.fetch();
+			collection.fetch();
 		},60000);
 	},
 
-	sync: function(method, model, options) {
-		var params = _.extend({
-		  type:         'GET',
-		  dataType:     'jsonp',
-		  url:			"http://api.nytimes.com/svc/topstories/v1/home.jsonp?api-key=810f34cc075b2edfd8826c689f4bc327:6:73683735",
-		  processData:  false
-		}, options);
-
-		return $.ajax(params);
+	model : Article,
+	url : "http://api.nytimes.com/svc/topstories/v1/home.jsonp?api-key=810f34cc075b2edfd8826c689f4bc327:6:73683735",
+	sync : function(method, collection, options) {
+		options.dataType = "jsonp";
+		options.jsonpCallback = "callbackTopStories";
+		return Backbone.sync(method, collection, options);
 	},
-	
-	parse: function(response) {
-		if (response) {
-			return {temp: response.query.results.channel.item.condition.temp,
-					condition: response.query.results.channel.item.condition.text};
-		}
+	parse : function(response) {
+		debugger;
+		return response.results;
 	}
 });
