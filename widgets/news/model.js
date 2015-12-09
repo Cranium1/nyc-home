@@ -19,7 +19,6 @@ var NewsModel = Backbone.Collection.extend({
 		return Backbone.sync(method, collection, options);
 	},
 	parse : function(response) {
-		debugger;
 		return response.results;
 	}
 });
